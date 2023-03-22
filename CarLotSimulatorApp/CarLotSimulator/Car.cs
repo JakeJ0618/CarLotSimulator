@@ -11,7 +11,8 @@ namespace CarLotSimulator
     {
         public Car()
         {
-            
+            CarLot.numberOfCars++;
+            Console.WriteLine($"Number of cars in the lot: {CarLot.numberOfCars}\n");
         }
         public string Make { get; set; }
         public string Model { get; set; }

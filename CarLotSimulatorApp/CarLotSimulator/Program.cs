@@ -6,6 +6,7 @@ namespace CarLotSimulator
     {
         static void Main(string[] args)
         {
+            Console.WriteLine($"Number of cars in the lot: {CarLot.numberOfCars}\n");
             //TODO
 
             //Create a seperate class file called Car
@@ -21,6 +22,7 @@ namespace CarLotSimulator
             //*************BONUS*************//
 
             // Set the properties utilizing the 3 different ways we learned about, one way for each car
+            var jakesCarLot = new CarLot();
 
             var car1 = new Car();
             car1.Year = "1967";
@@ -48,7 +50,8 @@ namespace CarLotSimulator
             car3.HonkNoise = "honk";
             car3.IsDriveable = true;
 
-           
+            CarLot.numberOfCars++;
+            Console.WriteLine($"Number of cars in the lot: {CarLot.numberOfCars}\n");
         }
         
 
